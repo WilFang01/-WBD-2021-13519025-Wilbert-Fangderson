@@ -1,0 +1,73 @@
+.menu_table {
+    width : 1000px;
+    height: 1000px;
+    border-style: solid;
+}
+
+/*==============*/
+/* Product Name */
+/*==============*/
+.name_table{
+    border-style: solid;
+    width: 110px;
+    height: 130px;
+    float : left;
+}
+
+.product_name{
+    border-style: solid;
+    padding-left: 7px;
+}
+
+.cola {
+    color : red;
+    margin-top: 3px;
+    padding-left: 3px;
+    font-size: 13pt;
+}
+
+.pepsi {
+    color : blue;
+    padding-left: 3px;
+    font-size: 13pt;
+}
+
+.sprite {
+    color : green;
+    padding-left: 3px;
+    font-size: 13pt;
+}
+
+/*===============*/
+/* Product Price */
+/*===============*/
+.price_table{
+    
+}
+
+.product_price{
+    border-style: solid;
+    padding-left: 7px;
+}
+
+/*===================*/
+/* Product Thumbnail */
+/*===================*/
+.thumbnail_table{
+    border-style: solid;
+    width: 110px;
+    height: 130px;
+
+}
+
+.colapic{
+
+}
+
+.pepsipic{
+
+}
+
+.spritepic{
+
+}
