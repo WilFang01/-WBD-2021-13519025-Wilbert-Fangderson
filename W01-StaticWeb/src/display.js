@@ -7,12 +7,24 @@ const book = data.books[urlParam.get("index")]
 
 function showBook(book) {
     const myArticle = document.createElement('article');
+    const judul = document.createElement('h1');
+    const harga = document.createElement('p');
+    const gambar = document.createElement('img');
     const penulis = document.createElement('p');
     const penerbit = document.createElement('p');
     const penyunting = document.createElement('p');
     const penerjemah = document.createElement('p');
     const judulasli = document.createElement('p');
     const penerbitasli = document.createElement('p');
+
+    judul.textContent= book.judul;
+    myArticle.appendChild(judul);
+
+    gambar.src = book.primer["url-foto"];
+    myArticle.appendChild(gambar);
+
+    harga.textContent= 'Harga : ' + book.primer.harga;
+    myArticle.appendChild(harga);
 
 
     if (book.deskripsi.penulis){
