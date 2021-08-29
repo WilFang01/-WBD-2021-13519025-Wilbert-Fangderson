@@ -59,3 +59,7 @@ img {
     text-align: center;
     margin: 0;
 }
+
+a{
+    border-color: red;
+}
