@@ -16,15 +16,14 @@
 
 <?php 
     session_start();
-    $json = file_get_contents("./user.json");
-    $user_data = json_decode($json);
+    $logins = array('username1' => 'password1','username2' => 'password2','username3' => 'password3');
 
-    if (isset($_POST["submit"])) {
+    if (isset($_POST["Submit"])) {
         $user=$_POST["username"];
         $pass=$_POST["password"];
 
-        // Edit file username and password here
-        if ($user_data['user'] == $pass) {
+        if ($logins[$user] == $pass){
+            $_SESSION['UserData']['user']=$logins[$user];
             header("location:index.html");
             exit;
         }
