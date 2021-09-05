@@ -5,7 +5,6 @@
     </head>
     <body>
         <h1 class="judul"><u>13519025-Pedia</u></h1>
-        <button class="login"><a href="./login.php"> Login </a></button><br><br>
         <button class="shop"> Shop </button>
         <div class = "menu_table">
             <div class = "name_table">
@@ -41,3 +40,11 @@
         </div>
     </body>
 </html>
+
+<?php 
+    session_start();
+    if(!isset($_SESSION['UserData']['user'])){
+        header("location:login.php");
+        exit;
+    }
+?>
