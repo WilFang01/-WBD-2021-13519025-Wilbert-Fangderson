@@ -1,5 +1,9 @@
+body{
+    background: aqua;
+}
+
 .menu_table {
-    width : 675px;
+    width : 900px;
     height: 1170px;
     border-style: solid;
     margin : auto;
@@ -7,6 +11,7 @@
 
 .shop {
     float: right;
+    text-decoration: none;
 }
 
 .judul{
@@ -24,7 +29,7 @@
     height: 20px;
     float : left;
     text-align: center;
-    
+    background-color: grey;
 }
 
 p{
@@ -34,6 +39,7 @@ p{
     text-align: center;
     margin: 0;
     padding-top: 70px;
+    background-color: lightgray;
 }
 
 
@@ -46,6 +52,7 @@ p{
     height: 20px;
     float : left;
     text-align: center;
+    background-color: grey;
 }
 
 /*===================*/
@@ -57,6 +64,7 @@ p{
     height: 20px;
     float : left;
     text-align: center;
+    background-color: grey;
 }
 
 img {
@@ -69,8 +77,31 @@ img {
     padding-bottom: 30px;
     text-align: center;
     margin: 0;
+    background-color: lightgray;
+    float : left;
 }
 
 a{
     border-color: red;
+}
+
+/*===================*/
+/* Cart Thumbnail */
+/*===================*/
+.cart_table{
+    border-style: solid;
+    width: 220px;
+    height: 20px;
+    float : left;
+    text-align: center;
+    background-color: grey;
+}
+
+.cartb{
+    border-style: solid;
+    width : 220px;
+    height : 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: lightgrey;
 }

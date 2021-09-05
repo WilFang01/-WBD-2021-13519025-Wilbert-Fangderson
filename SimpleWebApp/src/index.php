@@ -1,11 +1,19 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['UserData']['user'])){
+        header("location:login.php");
+        exit;
+    }
+?>
+
 <html>
     <head>
         <title>13519025-Pedia</title>
-        <link href="13519025pedia.css" rel="stylesheet" type="text/css" >
+        <link href="index.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
-        <h1 class="judul"><u>13519025-Pedia</u></h1>
-        <button class="shop"> Shop </button>
+        <h1 class="judul"><strong>13519025-Pedia</strong></h1>
+        <button class="shop"> <a href="./shopping.php" class="shop"> Shopping Cart </a></button>
         <div class = "menu_table">
             <div class = "name_table">
                 <div class = "nama_buku"><b>Nama Buku</b></div>
@@ -37,14 +45,58 @@
                 <a href = "./display.html?index=5"><img src="https://togamas.com/css/images/items/potrait/JPEGG_5905_Epistemologi_Dasar.jpg"></a>
                 <a href = "./display.html?index=6"><img src="https://s2.bukalapak.com/img/2027491742/large/Buku_Teori_Teori_Etika_karya_Gordon_Graham.jpg"></a>
             </div>
+            <div class = "cart_table">
+                <div class="cart"><b> Cart </b></div>
+                    <div class ="cartb">
+                        <form action="addtocart.php" method="POST">
+                            <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
+                            <input type="hidden" name="id" value="1">
+                            <input type="submit" value="Add to Cart">
+                        </form>
+                    </div>
+                    <div class ="cartb">
+                        <form action="addtocart.php" method="POST">
+                            <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
+                            <input type="hidden" name="id" value="2">
+                            <input type="submit" value="Add to Cart">
+                        </form>
+                    </div>
+                    <div class ="cartb">
+                        <form action="addtocart.php" method="POST">
+                            <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
+                            <input type="hidden" name="id" value="3">
+                            <input type="submit" value="Add to Cart">
+                        </form>
+                    </div>
+                    <div class ="cartb">
+                        <form action="addtocart.php" method="POST">
+                            <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
+                            <input type="hidden" name="id" value="4"> 
+                            <input type="submit" value="Add to Cart">
+                        </form>
+                    </div>
+                    <div class ="cartb">
+                        <form action="addtocart.php" method="POST">
+                            <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
+                            <input type="hidden" name="id" value="5">
+                            <input type="submit" value="Add to Cart">
+                        </form>
+                    </div>
+                    <div class ="cartb">
+                        <form action="addtocart.php" method="POST">
+                            <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
+                            <input type="hidden" name="id" value="6">
+                            <input type="submit" value="Add to Cart">
+                        </form>
+                    </div>
+                    <div class ="cartb">
+                        <form action="addtocart.php" method="POST">
+                            <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
+                            <input type="hidden" name="id" value="7">
+                            <input type="submit" value="Add to Cart">
+                        </form>
+                    </div>
+            </div>
         </div>
     </body>
 </html>
-
-<?php 
-    session_start();
-    if(!isset($_SESSION['UserData']['user'])){
-        header("location:login.php");
-        exit;
-    }
-?>
