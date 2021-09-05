@@ -16,15 +16,13 @@
 
 <?php 
     session_start();
-
     if (isset($_POST["Submit"])) {
-        echo "Halooo";
         $logins = array('username1' => 'password1','username2' => 'password2','username3' => 'password3');
 
-        $user=$_POST["username"];
-        $pass=$_POST["password"];
+        $user=$_POST["Username"];
+        $pass=$_POST["Password"];
 
-        if ($logins[$user] == $pass){
+        if (isset($logins[$user]) && $logins[$user] == $pass){
             $_SESSION['UserData']['user']=$logins[$user];
             header("location:index.php");
             exit;
