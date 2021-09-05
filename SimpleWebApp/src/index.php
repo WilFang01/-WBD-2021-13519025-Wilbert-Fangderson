@@ -50,50 +50,57 @@
                     <div class ="cartb">
                         <form action="addtocart.php" method="POST">
                             <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
-                            <input type="hidden" name="id" value="1">
-                            <input type="submit" value="Add to Cart">
+                            <input type="hidden" name="name" value="Untuk Apa Seni">
+                            <input type="hidden" name="price" value="60000">
+                            <input type="submit" value="Add to Cart" name="addCart">
                         </form>
                     </div>
                     <div class ="cartb">
                         <form action="addtocart.php" method="POST">
                             <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
-                            <input type="hidden" name="id" value="2">
-                            <input type="submit" value="Add to Cart">
+                            <input type="hidden" name="name" value="Warisan Sejarah Arianisme">
+                            <input type="hidden" name="price" value="97000">
+                            <input type="submit" value="Add to Cart" name="addCart">
                         </form>
                     </div>
                     <div class ="cartb">
                         <form action="addtocart.php" method="POST">
                             <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
-                            <input type="hidden" name="id" value="3">
-                            <input type="submit" value="Add to Cart">
+                            <input type="hidden" name="name" value="Sejarah Filsafat Kontemporer: Jerman dan Inggris">
+                            <input type="hidden" name="price" value="70000">
+                            <input type="submit" value="Add to Cart" name="addCart">
                         </form>
                     </div>
                     <div class ="cartb">
                         <form action="addtocart.php" method="POST">
                             <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
-                            <input type="hidden" name="id" value="4"> 
-                            <input type="submit" value="Add to Cart">
+                            <input type="hidden" name="name" value="Sejarah Filsafat Kontemporer: Prancis">
+                            <input type="hidden" name="price" value="63000"> 
+                            <input type="submit" value="Add to Cart" name="addCart">
                         </form>
                     </div>
                     <div class ="cartb">
                         <form action="addtocart.php" method="POST">
                             <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
-                            <input type="hidden" name="id" value="5">
-                            <input type="submit" value="Add to Cart">
+                            <input type="hidden" name="name" value="Semiotika dan Hipersemiotika">
+                            <input type="hidden" name="price" value="120000">
+                            <input type="submit" value="Add to Cart" name="addCart">
                         </form>
                     </div>
                     <div class ="cartb">
                         <form action="addtocart.php" method="POST">
                             <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
-                            <input type="hidden" name="id" value="6">
-                            <input type="submit" value="Add to Cart">
+                            <input type="hidden" name="name" value="Epistemologi Dasar">
+                            <input type="hidden" name="price" value="60000">
+                            <input type="submit" value="Add to Cart" name="addCart">
                         </form>
                     </div>
                     <div class ="cartb">
                         <form action="addtocart.php" method="POST">
                             <input type="number" name="qty" class="qty" placeholder="Quantity" min = 0>
-                            <input type="hidden" name="id" value="7">
-                            <input type="submit" value="Add to Cart">
+                            <input type="hidden" name="name" value="Teori-Teori Etika">
+                            <input type="hidden" name="price" value="96000">
+                            <input type="submit" value="Add to Cart" name="addCart">
                         </form>
                     </div>
             </div>
