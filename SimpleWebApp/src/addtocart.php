@@ -8,7 +8,12 @@
 
         $book = array($name, $price, $quantity);
 
-        $_SESSION[$name] = $book;
+        if (!isset($_SESSION['Cart']))
+        {
+            $_SESSION['Cart'] = array();
+        }
+
+        $_SESSION['Cart'][$name] = $book;
 
         header('location: index.php');
     }
